@@ -29,7 +29,8 @@ In the second example, the options are asFactor = TRUE and varImp_type = 2, such
 ![alt tag](https://github.com/mrecos/RF_bias_r/blob/master/graphics/RF_bias_factor_true.png)
 
 Finally, the measure of importance is set to mean decrease in node accuracy (varImp_type = 1) and the bias is no longer observed.  This is the same whether categories are integers or factors.
-![alt tag](https://github.com/mrecos/RF_bias_r/blob/master/graphics/RF_accuracy.png)
+![alt tag](https://github.com/mrecos/RF_bias_R/blob/master/graphics/RF_Accuracy.png)
+
 
 #### Details on the two types of Random Forest variable importance measures
 [documentation](http://www.inside-r.org/packages/cran/randomForest/docs/importance)
