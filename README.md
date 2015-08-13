@@ -10,7 +10,7 @@ A finding of Nowling's post is that the positive correlation between importance 
  
 This is opposed to what Nowling calls [One-hot encoding](https://en.wikipedia.org/wiki/One-hot) where each level is split into its own binary variable such that a variable with 5 levels would result in 5 new variables with either 0 or 1 indicating the presence of that level. This is similar to an indicator variable typical to model building, but even there is no reference level.
 
-#### My intention was simply to recreate this in R and see if the bias of categorical variable level count on Gini importance persisted.  Being that I am not interested in the issue of encoding, I skipped the On-hot encoding and only worked with integer encoding
+#### My intention was simply to recreate this in R and see if the bias of categorical variable level count on Gini importance persisted.  Being that I am not interested in the issue of encoding, I skipped the On-hot encoding and only worked with integer and factor encoding.  I will continue to think on why these results are what they are.
 
 To do so, I reviewed Nowling's Python code and recreated it in R trying to keep variable names and the general approach the same; obvious differences result from translation.
 Also, I included two additional switches, 1) "asFactor" to switch between true integer representation of the categorical variable level and the conversion of the variable into a factor; and 2) varImp_type that switches between the two types of variable importance in the Random Forest implementation; 1 = decrease in accuracy, 2 = node purity (Gini importance).
